@@ -101,6 +101,7 @@ body {
 }
 
 .page--list {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
@@ -109,6 +110,30 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 80%;
+}
+
+#bt-retour{
+    display: block;
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.5s ease-in-out;
+}
+#bt-retour:hover{
+    background-color: rgba(0, 0, 0, 0.80);
+    transition: background 0.5s ease-in-out;
 }
 
 .page--list--film {
