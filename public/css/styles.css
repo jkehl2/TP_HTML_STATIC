@@ -1,0 +1,247 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: monospace, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#container {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/* PAGE HEADER PART */
+#container > header {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: content;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: black;
+}
+.page--title {
+  display: block;
+  font-size: 2em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: content;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+.page--shortcut-menu {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: content;
+  width: fit-content;
+
+  list-style-type: none;
+
+  padding: 0.75rem 1rem;
+  border: 2px solid white;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  color: white;
+}
+.page--shortcut-menu--item {
+  box-sizing: border-box;
+  display: block;
+  padding: 0.5rem 2rem;
+  color: white;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.page--shortcut-menu--item:hover {
+  color: black;
+  background-color: white;
+  transition: all 750ms ease-out;
+  transform: scale(1.25);
+}
+
+/* PAGE MAIN PART */
+#container > main {
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: content;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+}
+
+.page--list {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 80%;
+}
+
+.page--list--film {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  max-width: max-content;
+}
+
+.page--list--film:not(:first-child) {
+  margin-top: 4rem;
+}
+
+.page--list--film > section {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 1rem;
+  max-width: 600px;
+}
+
+.list--film--image {
+  box-sizing: border-box;
+  display: block;
+  margin: 0rem;
+  width: auto;
+  max-width: 350px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  border-radius: 1rem 2rem / 1rem 2rem;
+  box-shadow: 1px 1px 5px black;
+}
+.list--film--title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 1rem 1rem 0;
+  margin: 0;
+}
+
+.list--film--wiki-link {
+  box-sizing: border-box;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  transition: all 1s;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.list--film--wiki-link:hover {
+  color: black;
+  background-color: white;
+  transition: all 750ms ease-out;
+  transform: scale(1.1);
+}
+
+.film--infos {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0;
+  border: 2px solid grey;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.film--infos[open] {
+  border-radius: 1rem;
+  border: 2px solid blue;
+}
+
+.film--infos--synopsis {
+  font-size: 0.75rem;
+  word-wrap: break-word;
+}
+.film--infos--details {
+  padding: 0;
+  margin: 0;
+}
+
+.film--infos--details--list {
+  padding: 0;
+  margin: 1rem 0;
+  list-style-type: none;
+}
+
+.film--infos--details--list--item {
+  padding: 0.25rem 0;
+  margin: 0;
+  border-top: 1px solid grey;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.film--infos--details--list--item:last-child {
+  padding: 0.25rem 0;
+  margin: 0;
+  border-bottom: 1px solid grey;
+}
+
+/* PAGE FOOTER PART */
+#container > footer {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: content;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/* SCREEN ADAPTATIVE FONT-SIZE */
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 10px;
+  }
+  .list--film--image {
+    width: 70%;
+  }
+}
+
+time {
+  display: inline;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tp_html_static",
+  "version": "1.0.0",
+  "description": "UNe page HTML static pour le titre pro",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkehl2/TP_HTML_STATIC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkehl2/TP_HTML_STATIC/issues"
+  },
+  "homepage": "https://github.com/jkehl2/TP_HTML_STATIC#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
